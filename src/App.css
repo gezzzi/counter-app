@@ -5,29 +5,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   color: #ffffff;
 }
 
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .counter {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   width: 100%;
+  max-width: 300px;
 }
 
 .counter p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0.5rem 0;
   font-family: monospace;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .buttons {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   justify-content: center;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 button {
@@ -38,6 +47,7 @@ button {
   background-color: #646cff;
   color: white;
   border: none;
+  min-width: 80px;
 }
 
 button:hover {
@@ -79,4 +89,27 @@ button:hover {
 .base-selector select option {
   background-color: #242424;
   color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .counter p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    gap: 0.3rem;
+  }
+
+  button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }
