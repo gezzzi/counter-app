@@ -15,33 +15,37 @@ function App(): JSX.Element {
   }
 
   return (
-    <div className="container">
+    <div className="app-container">
       <h1>カウンターアプリ</h1>
-      <div className="counter">
-        <p>現在のカウント: {count}</p>
-        <div className="base-selector">
-          <label>基数を選択: </label>
-          <select 
-            value={base} 
-            onChange={(e) => setBase(Number(e.target.value))}
-          >
-            {bases.map(b => (
-              <option key={b} value={b}>{b}進数</option>
-            ))}
-          </select>
-        </div>
-        <p>{base}進数: {convertToBase(count, base)}</p>
-        <div className="buttons">
-          <button onClick={() => setCount(count + 1)}>
-            増やす
-          </button>
-          <button onClick={() => setCount(count - 1)}>
-            減らす
-          </button>
-          <button onClick={() => setCount(0)}>
-            リセット
-          </button>
-        </div>
+      
+      <div className="counter-display">
+        <h2>現在のカウント: {count}</h2>
+      </div>
+
+      <div className="base-selector">
+        <label htmlFor="baseSelect">基数を選択: </label>
+        <select
+          id="baseSelect"
+          value={base}
+          onChange={(e) => setBase(Number(e.target.value))}
+        >
+          {bases.map(b => (
+            <option key={b} value={b}>{b}進数</option>
+          ))}
+        </select>
+      </div>
+      
+      <p>{base}進数: {convertToBase(count, base)}</p>
+      <div className="buttons">
+        <button onClick={() => setCount(count + 1)}>
+          増やす
+        </button>
+        <button onClick={() => setCount(count - 1)}>
+          減らす
+        </button>
+        <button onClick={() => setCount(0)}>
+          リセット
+        </button>
       </div>
     </div>
   )
