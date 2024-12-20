@@ -1,13 +1,15 @@
 {
   "name": "counter-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "様々な進数で表示できるカウンターアプリケーション",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

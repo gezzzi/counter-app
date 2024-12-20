@@ -5,9 +5,8 @@ function App(): JSX.Element {
   const [count, setCount] = useState<number>(0)
   const [base, setBase] = useState<number>(2)
 
-  const bases = [1, 2, 3, 4, 8, 16] // 選択可能な基数
+  const bases = [1, 2, 3, 4, 8, 16]
 
-  // 1進数用の変換関数を追加
   const convertToBase = (num: number, base: number): string => {
     if (base === 1) {
       return '1'.repeat(Math.max(0, num))
