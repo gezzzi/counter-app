@@ -15,45 +15,7 @@
 - Vite
 - CSS
 
-## 開発環境のセットアップ
+## Demo
+アプリケーションは以下のURLで公開しています：
 
-```bash
-# リポジトリのクローン
-git clone [リポジトリURL]
-
-# 依存関係のインストール
-npm install
-
-# 開発サーバーの起動
-npm run dev
-```
-
-## ビルド方法
-
-```bash
-# プロダクションビルド
-npm run build
-
-# ビルドのプレビュー
-npm run preview
-```
-
-## ディレクトリ構造
-
-```
-counter-app/
-├── src/
-│   ├── App.tsx        # メインのアプリケーションコンポーネント
-│   ├── App.css        # スタイリング
-│   └── main.tsx       # エントリーポイント
-├── public/
-│   └── vite.svg       # アプリケーションアイコン
-├── index.html         # HTMLテンプレート
-├── package.json       # 依存関係と設定
-├── tsconfig.app.json  # TypeScript設定
-└── vite.config.ts     # Vite設定
-```
-
-## ライセンス
-
-MIT
+https://gezzzi.github.io/counter-app/
