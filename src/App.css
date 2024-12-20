@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.counter {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.counter p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-family: monospace;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+.base-selector {
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.base-selector select {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 2px solid #888888;
+  background-color: #242424;
+  color: #ffffff;
+  cursor: pointer;
+  min-width: 100px;
+  outline: none;
+}
+
+.base-selector select:hover {
+  border-color: #646cff;
+}
+
+.base-selector select:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.3);
+}
+
+.base-selector label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.base-selector select option {
+  background-color: #242424;
+  color: #ffffff;
+}
