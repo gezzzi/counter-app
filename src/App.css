@@ -87,18 +87,29 @@ button:hover {
     padding: 0.5rem;
   }
 
-  h1, h2, label {
-    font-size: 1.3rem;
-    font-weight: bold;
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
-  .counter-display {
-    font-size: 1.1rem;
+  .counter-display h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .base-selector {
+    margin: 0.8rem 0;
   }
 
   .base-selector label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
   }
 
   .buttons {
@@ -112,11 +123,17 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  h1, h2 {
-    font-size: 1.2rem;
+  .app-container {
+    padding: 0.3rem;
   }
 
-  .counter-display {
-    font-size: 1rem;
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .counter-display h2,
+  .base-selector label,
+  p {
+    font-size: 0.9rem;
   }
 }
